@@ -1,0 +1,1 @@
+uvicorn projectb.asgi:application --port 8000 --workers 100 --log-level debug --reload
