@@ -1,0 +1,8 @@
+// user login authentication (sign in page)
+export const NETWORK_INFO_FETCH_DETAILS_START = 'NETWORK_INFO_FETCH_DETAILS_START';
+export const NETWORK_INFO_FETCH_DETAILS_SUCCESS = 'NETWORK_INFO_FETCH_DETAILS_SUCCESS';
+export const NETWORK_INFO_FETCH_DETAILS_FAIL = 'NETWORK_INFO_FETCH_DETAILS_FAIL';
+
+// clearing network info details for the particular user
+export const CLEAR_NETWORK_INFO_DETAILS = 'CLEAR_NETWORK_INFO_DETAILS';
+

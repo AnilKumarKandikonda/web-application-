@@ -1,0 +1,52 @@
+//
+//candidate-list.scss
+//
+
+.candidate-list-box{
+    transition: all 0.3s ease;
+    .favorite-icon{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    &:hover{
+        box-shadow: $box-shadow;
+        border-color: var(--#{$prefix}primary);
+    }
+}
+
+.profile-active {
+    padding: 5px;
+    top: -4px;
+    right: -5px;
+    border: 2px solid var(--#{$prefix}border-color-translucent);
+}
+
+
+.featured-label{
+    top: 5px;
+    position: absolute;
+    right: 0px;
+    .featured {
+        margin-bottom: 10px;
+        color: $white;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 10px;
+        background: #766df4;
+        position: relative;
+        text-transform: capitalize;
+        display: inline-block;
+        padding: 6px;
+        &::before {
+            content: "";
+            position: absolute;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-right: 11px solid #766df4;
+            left:-11px;
+            top: 0;
+        }
+    }
+}
+

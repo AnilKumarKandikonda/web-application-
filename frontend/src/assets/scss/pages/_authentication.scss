@@ -1,0 +1,120 @@
+//
+//authentication.scss
+//
+
+.bg-auth {
+    padding: 40px 0;
+    background-color: rgba($primary-text, 0.2);
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+
+    @media (max-width: 991.98px) {
+        padding: 60px 0;
+    }
+}
+
+.auth-box {
+    border: none;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .auth-content {
+        background: rgba($primary-text, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: $black;
+    }
+
+    .logo-dark {
+        display: inline-block;
+    }
+
+    .logo-light {
+        display: none;
+    }
+
+    .auth-form {
+        .form-control {
+            color: $teal-700;
+            border-color: rgba($white, 0.10);
+            background-color: rgba($white, 0.10);
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: rgba($white, 0.45);
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: rgba($white, 0.45);
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: rgba($white, 0.45);
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: rgba($white, 0.45);
+            }
+        }
+    }
+}
+
+.projectb-login-custominput {
+    border: rgba($white, 0.10);
+}
+
+.projectb-login {
+    &-container {
+        width: $projectb-screen-width-100;
+
+        @media (min-width: 991.98px) {
+            width: $projectb-screen-width-50;
+        }
+        @media (min-width: 1340.98px) {
+            width: $projectb-screen-width-40;
+        }
+    }
+    &-card{
+        padding: 3rem;
+        @media (max-width: 600px) {
+            padding: 1rem;
+        }
+    }
+    &-checkbox:checked{
+        background-color: $teal-700;
+    }
+    &-resetpassword{
+        @media (max-width: 420px) {
+            width: $projectb-screen-width-100;
+            text-align: center;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
+/*****************dark-mode******************/
+
+body[data-bs-theme='dark'] {
+    .bg-auth {
+        background-color: $gray-900;
+    }
+
+    .auth-box {
+        .logo-light {
+            display: inline-block;
+        }
+
+        .logo-dark {
+            display: none;
+        }
+    }
+}

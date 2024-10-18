@@ -1,0 +1,318 @@
+.projectb {
+    &-network {
+        &-network {
+            margin-top: 130px;
+            padding-bottom: 40px;
+        }
+
+        &-searchposition {
+            position: relative;
+        }
+
+        &-searchfilter {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+        }
+
+        &-searchlistitems {
+            padding: 5px 10px;
+            color: $teal-600;
+            overflow: hidden;
+            position: relative;
+            z-index: 700;
+            background-color: rgb(157, 240, 198);
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 2px;
+                background-color: $teal-600;
+                opacity: 0.7;
+                margin-left: 8%;
+                bottom: 0;
+                left: 0;
+                transform: scale(0);
+                transition: 1s all ease-out;
+            }
+
+            &:hover {
+                left: 0;
+                background-color: $purple-400;
+                color: white;
+            }
+
+            &:hover::after {
+                transform: scale(1);
+            }
+        }
+
+        &-networkcontainer {
+            @media (min-width: 1100px) {
+                max-width: 95% !important;
+            }
+
+            @media (max-width: 992px) {
+                max-width: 97% !important;
+            }
+
+            @media (max-width: 740px) {
+                padding: 0 5px;
+            }
+        }
+    }
+
+    &-mainnetwwork {
+        &-designation {
+            color: $orange !important;
+
+
+            &:hover {
+                color: $orange !important;
+            }
+        }
+
+        &-completedesignation {
+            @media (max-width: 870px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 15px;
+            }
+        }
+
+        &-networkinfo {
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+    }
+
+    &-networkinfo {
+        &-icon {
+            width: 70px;
+            height: 70px;
+            opacity: 0.7;
+        }
+
+        &-flexbox {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        &-messagebutton {
+            padding-right: 3px;
+            padding-left: 3px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+
+        &-personal {
+            margin-left: 10px;
+        }
+
+        &-profilebody {
+            margin-left: 0 !important;
+        }
+
+        &-more {
+            color: #766df4;
+            text-align: center;
+        }
+
+        &-container {
+            @media (max-width: 767px) {
+                margin-top: 130px;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 16px;
+            }
+        }
+
+        &-infocontainer {
+            @media (max-width: 767px) {
+                margin-top: 130px;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 16px;
+            }
+
+            @media (min-width: 768px) {
+                margin: 130px auto;
+                padding: 16px;
+                width: 70%;
+            }
+
+            @media (min-width: 1200px) {
+                margin: 130px auto;
+                padding: 16px;
+                width: 60%;
+            }
+
+            @media (min-width: 1800px) {
+                margin: 130px auto;
+                padding: 16px;
+                width: 50%;
+            }
+
+            @media (min-width: 2000px) {
+                margin: 130px auto;
+                padding: 16px;
+                width: 35%;
+            }
+        }
+
+        &-infoslidecontainer {
+            @media (max-width: 767px) {
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 10px;
+            }
+        }
+    }
+
+    &-networkmodal {
+        &-modal .modal-content {
+            max-height: 80% !important;
+        }
+    }
+
+    &-pagination {
+        &-container {
+            @media (max-width: 767px) {
+                justify-content: center;
+            }
+
+            @media (min-width: 900px) {
+                justify-content: center;
+            }
+        }
+
+        &-pagination {
+            width: 35px !important;
+            height: 35px !important;
+        }
+    }
+
+    &-jobs {
+        &-navitem .nav-link {
+            @media (max-width: 636px) {
+                padding: 3px 7px;
+                margin-right: 3px;
+            }
+
+            @media (max-width: 476px) {
+                font-size: 14px;
+
+            }
+
+            @media (max-width: 375px) {
+                font-size: 13px;
+                padding: 2px 5px;
+
+            }
+
+            @media (max-width: 335px) {
+                font-size: 12px;
+                padding: 2px 4px;
+
+            }
+        }
+    }
+
+    &-profile {
+        &-main {
+            margin-top: 130px;
+        }
+
+        &-slidemain {
+            margin-top: 120px;
+        }
+
+        &-container {
+            @media (min-width: 1100px) {
+                max-width: 95% !important;
+            }
+
+            @media (max-width: 992px) {
+                max-width: 97% !important;
+            }
+        }
+
+        &-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: $purple-100;
+        }
+
+        &-image {
+            margin-right: 10px;
+        }
+
+        &-resumedownload {
+            text-decoration: underline;
+            color: #766df4;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+
+        &-resumecard {
+            width: 100%;
+        }
+    }
+
+    &-basemodal {
+        &-input {
+            border-color: $purple-300;
+        }
+    }
+
+    &-networkslideinfo {
+        &-overlay {
+
+            /* Height & width depends on how you want to reveal the overlay (see JS below) */
+            height: 100%;
+            width: 0%;
+            position: fixed;
+            /* Stay in place */
+            z-index: 100;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            background-color: rgb(236, 236, 236);
+            /* Black fallback color */
+            // background-color: rgba(41, 40, 40, 0.9);
+            /* Black w/opacity */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            transition: 0.5s;
+
+            box-shadow: 0 2px 2px 3px rgba($teal-400,0.4);
+
+            /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+            &-content {
+                position: absolute;
+                // top: 25%;
+                /* 25% from the top */
+                width: 100%;
+                /* 100% width */
+                // text-align: center;
+                /* Centered text/links */
+            }
+        }
+
+
+        &-backbutton {
+            text-align: start;
+            margin-left: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    }
+}

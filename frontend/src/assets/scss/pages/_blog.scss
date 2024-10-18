@@ -1,0 +1,144 @@
+.projectb {
+    &-personalblog {
+        &-container {
+            padding: 40px;
+
+            @media (min-width: 750px) {
+                max-width: 600px !important;
+            }
+
+            @media (min-width: 900px) {
+                max-width: 700px !important;
+            }
+
+            @media (min-width: 1000px) {
+                max-width: 900px !important;
+            }
+        }
+
+        &-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: inset;
+        }
+
+        &-body {
+            min-height: 100vh;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        &-internallink {
+            cursor: pointer;
+
+            &:hover {
+                background-color: $teal-300 !important;
+                color: $white !important;
+            }
+        }
+    }
+
+    &-createblog {
+        &-header {
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+        }
+
+        &-settings {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-blog {
+        &-imagecard {
+            display: flex;
+            gap: 5px;
+        }
+
+        &-imagecardoptions {
+            text-align: center;
+            margin-top: 3px;
+            border-top: 1px solid rgba($teal-300, 0.4);
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        &-photoelement {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            &:hover{
+                display: none;
+            }
+        }
+
+        &-options {
+            &-circle {
+                width: 30px;
+                height: 30px;
+                background-color: #3fa1a9;
+                border-radius: 50%;
+                margin-top: 5px;
+                +.active{
+                    background-color: pink;
+                }
+            }
+
+            &-square {
+                width: 30px;
+                height: 30px;
+                background-color: #3fa1a9;
+                margin-top: 5px;
+            }
+        }
+
+        &-editicon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+            height: 50%;
+            width: 50%;
+        }
+
+        &-editiconbg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            border: 2px solid #3fa1a9;
+            border-radius: 15px;
+        }
+        &-checkbox{
+            border: 1px solid $teal-300;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+}
+
+.blog-custom-file-upload {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #3fa1a9, #d8f3f5);
+
+    &:hover {
+        .projectb-blog-editiconbg {
+            opacity: 1;
+        }
+    }
+}

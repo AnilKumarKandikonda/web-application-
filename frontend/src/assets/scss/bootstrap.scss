@@ -1,0 +1,23 @@
+/*
+Template Name: Jobcy
+Author: Themesdesign
+Version: 1.0.0
+Website: https://themeforest.net/search/themesdesign
+Contact: themesdesign.in@gmail.com
+File: Custom Bootstrap Css File
+*/
+
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables/variables";
+@import "variables/variables-dark";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import "components/root";
+@import "components/general";
+@import "components/dropdown";
+@import "components/button";
+@import "components/navs-tabs";
+@import "components/pagination";

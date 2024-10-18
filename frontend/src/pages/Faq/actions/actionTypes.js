@@ -1,0 +1,4 @@
+// user login authentication (sign in page)
+export const FETCH_FAQ_DETAILS_START = 'FETCH_FAQ_DETAILS_START';
+export const FETCH_FAQ_DETAILS_SUCCESS = 'FETCH_FAQ_DETAILS_SUCCESS';
+export const FETCH_FAQ_DETAILS_FAIL = 'FETCH_FAQ_DETAILS_FAIL';
